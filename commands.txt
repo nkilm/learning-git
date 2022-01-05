@@ -1,0 +1,68 @@
+git config --global user.name "nikhil"
+git config --global user.email "nikhilmohitelhs@gmail.com"
+git config --list
+
+git init
+git clone <link>
+git status
+git diff <file name> --> to get all the changes made to the file 
+git commit -m "type your message here" -- we can commit only if the changes are staged (green not red)
+git add <file name>
+
+git add --a -->add all the files to staging area
+git log -- view all the changes/commits
+git log -5 -->last 5 commits 
+git show <commit-id> --> what all changes were made during this commit
+
+to get branch 
+git branch 
+
+to create and switch to new branch 
+git checkout -b <branch name>
+
+to delete a branch 
+git branch -d <branch name>
+
+For example 
+git branch -d "myBranch"
+
+git diff (compare the changes of the file in staged and working directory)
+git diff --staged (compare the changes of the file in previous commit and working directory)
+
+unstaged to commit (only tracked files will be commited)
+git commit -a -m "unstaged to commit"
+
+delete a file
+git rm <file name>
+
+rename a file 
+git rm <old name> <new name>
+
+suppose a file which was tracked earlier is not be ignored, it is to be added in .gitignore.
+now some modifications in that file... run git status.. it'll show that file is modified 
+so it is still getting tracked event though it is ignored so to UNTRACK IT 
+
+git rm --cached <file name>
+
+
+to restore the contents of a file to previous commit 
+git checkout --  <filename>
+
+match all the contents with previous commit 
+git checkout -f
+
+
+remote 
+
+git remote --> it is alternate name for repo link 
+
+git remote add origin git@github.com:nkilm/learning-git.git --> here origin is alternate name for the link 
+
+git remote -v --> what is alias name for the links for fetch and push 
+
+$git remove -v
+origin  git@github.com:nkilm/learning-git.git (fetch)
+origin  git@github.com:nkilm/learning-git.git (push)
+
+
+
