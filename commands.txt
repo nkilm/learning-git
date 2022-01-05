@@ -75,5 +75,33 @@ $ tail  < ~/.ssh/id_ed25519.pub
 copy the generated ssh key and add that key 
 
 
+branches contd..
+
+git branch -v --> list the branches with their previous commits 
+git branch --merged 
+git branch --no-merged 
+
+git branch -d <branch name> --> gives error if not merged 
+git branch -D <branch name> --> no error even if not merged 
+
+pushing branches to remote 
+
+first switch to that branch 
+git push origin <branch-name>
+
+make branch with different name 
+git push origin <branch-name-on-local-machine>:<branch-name-on-remote-repo>
+
+
+Deleting Branches from remote repository
+
+switch to master 
+git push -d origin <branch-name> --> if error occurred then merge and then delete or else use -D instead of -d 
+
+
+
+
+
+
 
 
