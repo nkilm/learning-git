@@ -1,0 +1,13 @@
+
+git config --global alias.<alias-name> original name
+
+
+Giving alias to git status 
+git config --global alias.st status 
+
+git config --global alias.cit commit 
+
+to unstage a file 
+git config --global alias.unstage 'restore --staged--
+
+

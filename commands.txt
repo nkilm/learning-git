@@ -65,4 +65,15 @@ origin  git@github.com:nkilm/learning-git.git (fetch)
 origin  git@github.com:nkilm/learning-git.git (push)
 
 
+addding SSH key to github 
+
+$ ssh-keygen -t ed25519 -C "nikhilmohitelhs@gmail.com"
+$ eval "$(ssh-agent -s)"
+$ ssh-add ~/.ssh/id_ed25519
+$ tail  < ~/.ssh/id_ed25519.pub
+
+copy the generated ssh key and add that key 
+
+
+
 
