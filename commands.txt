@@ -98,10 +98,14 @@ Deleting Branches from remote repository
 switch to master 
 git push -d origin <branch-name> --> if error occurred then merge and then delete or else use -D instead of -d 
 
+Giving alias to commands 
 
+git config --global alias.<desired alias name> '<original command>'
 
+For example:
 
+git config --global alias.oneline 'log --oneline'
 
+So from 'git log --oneline' to 'git oneline'
 
-
-
+git reset -> unstage everything in staging area
