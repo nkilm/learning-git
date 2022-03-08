@@ -109,3 +109,12 @@ git config --global alias.oneline 'log --oneline'
 So from 'git log --oneline' to 'git oneline'
 
 git reset -> unstage everything in staging area
+
+match the local repo with a particular commit 
+create a branch which matches with required commit 
+
+git checkout -b new_branch <hash value>
+
+or 
+
+git checkout -b new_branch HEAD~4 (go back 4 commits)
