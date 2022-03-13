@@ -118,3 +118,11 @@ git checkout -b new_branch <hash value>
 or 
 
 git checkout -b new_branch HEAD~4 (go back 4 commits)
+
+To view the workflow in more readable format
+git log --oneline --graph --decorate
+
+Goes to previous branch 
+
+git checkout - 
+
