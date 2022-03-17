@@ -1,13 +1,11 @@
 ![git logo](./git.png)
-
-
 ## Table of Contents
 
-- [**Basics**](#Basics)
-- [**logging**](#Logging)
-- [**Branch**](#Branch)
-- [**Miscellaneous**](#Miscellaneous)
-## Basics 
+- [**Basics**](#basics)
+- [**logging**](#logging)
+- [**Branch**](#branch)
+- [**Miscellaneous**](#miscellaneous)
+## Basics
 
 #### Initialization
 ```bash
@@ -59,7 +57,6 @@ git log -- or git log -p
 ```bash
 git log --oneline
 ```
-
 #### View last n commits 
 ```bash
 git log -2
