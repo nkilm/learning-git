@@ -1,14 +1,14 @@
 ![git logo](./git.png)
-## Table of Contents - Commands
+## Table of Contents
 
 - [**Basics**](#basics)
 - [**logging**](#logging)
-- [**logging**](#logging)
 - [**View Changes**](#changes)
 - [**Revert Changes**](#revert)
+- [**Branch**](#branch)
 
-## Basics
-# Life Cycle in Git
+# Basics
+## Life Cycle in Git
 ![life cycle in git](3-stage-architechture.png)
 #### Initialization
 ```bash
@@ -38,18 +38,12 @@ git commit -m "<msg>"
 ```bash
 git commit -am "<msg>" or git commit -a -m "<msg>"
 ```
-
-#### What changes have been made?
-```bash
-git diff <file-name> or git diff 
-```
-
 #### Cloning remote repository 
 ```bash
 git clone <link>
 ```
-
-## Logging 
+[Back to Top ⬆](#table-of-contents)
+# Logging 
 
 #### Detailed 
 ```bash
@@ -60,6 +54,9 @@ git log -- or git log -p
 ```bash
 git log --oneline
 ```
+```bash
+git shortlog
+```
 #### View last n commits 
 ```bash
 git log -2
@@ -68,7 +65,8 @@ git log -2
 ```bash
 git show <commit-id>
 ```
-## Changes
+[Back to Top ⬆](#table-of-contents)
+# Changes
 
 #### Entire project
 
@@ -90,8 +88,8 @@ git diff <file-name>
 ```bash
 git diff HEAD~2
 ```
-
-## Revert
+[Back to Top ⬆](#table-of-contents)
+# Revert
 
 #### Match the local repo with last commit
 ```bash
@@ -108,8 +106,8 @@ git checkout -- <file-name>
 ```bash
 git checkout -b <branch-name> <hash-value of commit>
 ```
-
-## Branch
+[Back to Top ⬆](#table-of-contents)
+# Branch
 ![different types of branches in git](workflow.png)
 #### Which branch? *
 ```bash
