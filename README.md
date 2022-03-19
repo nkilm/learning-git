@@ -1,12 +1,15 @@
 ![git logo](./git.png)
-## Table of Contents
+## Table of Contents - Commands
 
 - [**Basics**](#basics)
 - [**logging**](#logging)
-- [**Branch**](#branch)
-- [**Miscellaneous**](#miscellaneous)
-## Basics
+- [**logging**](#logging)
+- [**View Changes**](#changes)
+- [**Revert Changes**](#revert)
 
+## Basics
+# Life Cycle in Git
+![life cycle in git](3-stage-architechture.png)
 #### Initialization
 ```bash
 git init
@@ -65,9 +68,49 @@ git log -2
 ```bash
 git show <commit-id>
 ```
+## Changes
+
+#### Entire project
+
+```bash
+git diff
+```
+#### With staged files
+
+```bash
+git diff --staged
+```
+#### Single file
+```bash
+git diff <file-name>
+```
+
+#### Compare with different commit
+`Note: HEAD points to latest commit(hash value)`
+```bash
+git diff HEAD~2
+```
+
+## Revert
+
+#### Match the local repo with last commit
+```bash
+git checkout -f
+```
+
+#### For File
+```bash
+git checkout -- <file-name>
+```
+
+#### To particular commit 
+
+```bash
+git checkout -b <branch-name> <hash-value of commit>
+```
 
 ## Branch
-
+![different types of branches in git](workflow.png)
 #### Which branch? *
 ```bash
 git branch 
