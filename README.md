@@ -6,6 +6,7 @@
 - [**View Changes**](#changes)
 - [**Revert Changes**](#revert)
 - [**Branch**](#branch)
+- [**Aliases**](#aliases)
 
 # Basics
 ## Life Cycle in Git
@@ -132,12 +133,28 @@ git branch -D <branch name>
 ```bash
 git branch -v
 ```
-### which branches are merged?
+#### which branches are merged?
 ```bash
 git branch --merged 
 ```
 
-### which branches are not merged?
+#### which branches are not merged?
 ```bash 
 git branch --no-merged 
 ```
+
+#### switch to previous branch 
+```bash 
+git checkout -
+```
+
+[Back to Top ⬆](#table-of-contents)
+
+# Aliases
+```bash
+git config --global alias.<alias-name> "<original command>"
+```
+
+#### Example:  `git oneline` is alias to `git log --oneline` using `git config alias.oneline "log --oneline"`
+
+[Back to Top ⬆](#table-of-contents)
