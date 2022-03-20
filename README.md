@@ -7,7 +7,9 @@
 - [**Revert Changes**](#revert)
 - [**Branch**](#branch)
 - [**Aliases**](#aliases)
-
+- [**Remote**](#remote)
+- [**Miscellanous**](#miscellanous)
+    - [**Adding SSH Key to Account**](#adding-ssh-key-to-account)
 # Basics
 ## Life Cycle in Git
 ![life cycle in git](3-stage-architechture.png)
@@ -156,5 +158,43 @@ git config --global alias.<alias-name> "<original command>"
 ```
 
 #### Example:  `git oneline` is alias to `git log --oneline` using `git config alias.oneline "log --oneline"`
+
+[Back to Top ⬆](#table-of-contents)
+
+# Remote 
+
+#### What is the remote repo link? (If exists)
+```bash 
+git remote 
+```
+#### list all the remote repo links
+```bash
+git remote -v 
+```
+
+#### Connect `Local repo to Remote repo`
+```bash
+git remote add origin <SSH or link>
+```
+#### Remove remote link
+```bash
+git remove -v
+```
+[Back to Top ⬆](#table-of-contents)
+
+# Miscellanous 
+### Adding SSH Key to Account
+```bash
+ssh-keygen -t ed25519 -C "<gmail>"
+```
+```bash
+eval "$(ssh-agent -s)"
+```
+```bash
+ssh-add ~/.ssh/id_ed25519
+```
+```bash 
+tail  < ~/.ssh/id_ed25519.pub
+```
 
 [Back to Top ⬆](#table-of-contents)
