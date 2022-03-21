@@ -12,7 +12,7 @@
     - [**Adding SSH Key🔐 to Account**](#adding-ssh-key-to-account)
     - [**Configure git account**](#configuration-of-git-account-with-git-config)
     - [**Useful Commands**](#useful-commands)
-- [**Remove Everything☠**](#remove-everything☠)
+- [**Remove Everything☠**](#remove-everything)
 # Basics
 ## Life Cycle in Git
 ![life cycle in git](3-stage-architechture.png)
@@ -226,9 +226,9 @@ git rm <file-name>
 ```bash
 git rm <old-name> <new-name>
 ```
-# Remove Everything☠
+# Remove Everything
 `Note: This will remove entire git folder`
-
+# ☠
 ```bash
 rm -rf ./git
 ```
