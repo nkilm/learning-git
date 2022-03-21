@@ -12,7 +12,7 @@
     - [**Adding SSH Key🔐 to Account**](#adding-ssh-key-to-account)
     - [**Configure git account**](#configuration-of-git-account-with-git-config)
     - [**Useful Commands**](#useful-commands)
-- [**Remove Everything☠**](#remove-everything**)
+- [**Remove Everything☠**](#remove-everything☠)
 # Basics
 ## Life Cycle in Git
 ![life cycle in git](3-stage-architechture.png)
@@ -232,3 +232,4 @@ git rm <old-name> <new-name>
 ```bash
 rm -rf ./git
 ```
+[Back to Top ⬆](#table-of-contents)
