@@ -9,7 +9,10 @@
 - [**Aliases**](#aliases)
 - [**Remote**](#remote)
 - [**Miscellanous**](#miscellanous)
-    - [**Adding SSH Key to Account**](#adding-ssh-key-to-account)
+    - [**Adding SSH Key🔐 to Account**](#adding-ssh-key-to-account)
+    - [**Configure git account**](#configuration-of-git-account-with-git-config)
+    - [**Useful Commands**](#useful-commands)
+- [**Remove Everything☠**](#remove-everything**)
 # Basics
 ## Life Cycle in Git
 ![life cycle in git](3-stage-architechture.png)
@@ -157,7 +160,12 @@ git checkout -
 git config --global alias.<alias-name> "<original command>"
 ```
 
-#### Example:  `git oneline` is alias to `git log --oneline` using `git config alias.oneline "log --oneline"`
+#### Example:  `git oneline` is alias to `git log --oneline` using `git config --global alias.oneline "log --oneline"`
+
+#### List all the aliases
+```bash
+git config --list
+```
 
 [Back to Top ⬆](#table-of-contents)
 
@@ -196,5 +204,31 @@ ssh-add ~/.ssh/id_ed25519
 ```bash 
 tail  < ~/.ssh/id_ed25519.pub
 ```
+### Configuration of git account with `git config`
+
+#### Set name
+```bash
+git config --global user.name "<name>"
+```
+#### Set Email
+```bash
+git config --global user.email "<gmail>"
+```
 
 [Back to Top ⬆](#table-of-contents)
+# Useful Commands 
+
+#### Deleting a file
+```bash
+git rm <file-name>
+```
+#### Renaming a file
+```bash
+git rm <old-name> <new-name>
+```
+# Remove Everything☠
+`Note: This will remove entire git folder`
+
+```bash
+rm -rf ./git
+```
