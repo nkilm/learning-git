@@ -119,7 +119,6 @@ git checkout -b <branch-name> <hash-value of commit>
 ```bash
 git branch 
 ```
-
 #### Create and Switch to new branch 
 ```bash
 git checkout -b <branch name>
@@ -138,6 +137,10 @@ git branch -D <branch name>
 ```bash
 git branch -v
 ```
+#### list all branches in remote repo
+```bash
+git branch -r
+```
 #### which branches are merged?
 ```bash
 git branch --merged 
@@ -148,7 +151,7 @@ git branch --merged
 git branch --no-merged 
 ```
 
-#### switch to previous branch 
+#### switch to previous branch
 ```bash 
 git checkout -
 ```
