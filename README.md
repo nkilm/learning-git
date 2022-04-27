@@ -8,6 +8,7 @@
 - [**Branch**](#branch)
 - [**Aliases**](#aliases)
 - [**Remote**](#remote)
+- [**Stash** - Avoiding bad commits](#stash)
 - [**Miscellanous**](#miscellanous)
     - [**Adding SSH Key🔐 to Account**](#adding-ssh-key-to-account)
     - [**Configure git account**](#configuration-of-git-account-with-git-config)
@@ -193,6 +194,76 @@ git remove -v
 ```
 [Back to Top ⬆](#table-of-contents)
 
+# Stash
+#### Temporarily saves the current state of a working directory
+```bash
+git stash
+```
+
+#### Stashing `untracked files`
+```bash
+git stash -u 
+
+or 
+
+git stash --include-untracked
+```
+#### Stashing `ignored files`
+```bash
+git stash -a
+
+or 
+
+git stash --all
+```
+
+#### To re-apply the changes 
+```bash
+git stash apply 
+
+or
+
+git stash apply stash@{<index>
+```
+
+#### pop
+```bash
+git stash pop
+
+or 
+
+git stash apply pop@{<index>}
+```
+*what is the difference b/w using apply and pop?* <br>
+`apply - applies changes and does nothing afterwards` <br>
+`pop - removes the changes from the stash list after they have been applied`
+
+#### list all stashes
+```bash
+git stash list
+```
+#### stash with message
+```bash
+git stash save "<message>"
+```
+
+#### View changes 
+```bash
+git stash show 
+
+or 
+
+git stash show stash@{<index>}
+```
+
+#### Delete stash - To clear stack `git stash clear`
+```bash
+git stash drop
+
+or
+
+git stash drop stash@{<index>}
+```
 # Miscellanous 
 ### Adding SSH Key to Account
 ```bash
