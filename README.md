@@ -298,7 +298,7 @@ git rm <file-name>
 ```
 #### Renaming a file
 ```bash
-git rm <old-name> <new-name>
+git mv <old-name> <new-name>
 ```
 # Remove Everything
 `Note: This will remove entire git folder`
