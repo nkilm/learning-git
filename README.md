@@ -9,6 +9,7 @@
 - [**Aliases**](#aliases)
 - [**Remote**](#remote)
 - [**Stash** - Avoiding bad commits](#stash)
+- [**Merge**](#)
 - [**Miscellanous**](#miscellanous)
     - [**Adding SSH Key🔐 to Account**](#adding-ssh-key-to-account)
     - [**Configure git account**](#configuration-of-git-account-with-git-config)
@@ -155,6 +156,13 @@ git branch --no-merged
 #### switch to previous branch
 ```bash 
 git checkout -
+```
+[Back to Top ⬆](#table-of-contents)
+
+## Merging branches
+#### merge `master` with other branche
+```bash
+git merge master <branch-name>
 ```
 
 [Back to Top ⬆](#table-of-contents)
