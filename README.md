@@ -178,6 +178,10 @@ git config --global alias.<alias-name> "<original command>"
 ```bash
 git config --list
 ```
+#### Delete alias
+```bash
+git config --global --unset alias.NAME
+```
 
 [Back to Top ⬆](#table-of-contents)
 
@@ -199,6 +203,9 @@ git remote add origin <SSH or link>
 #### Remove remote link
 ```bash
 git remove -v
+```
+```bash
+git remote remove <name>
 ```
 [Back to Top ⬆](#table-of-contents)
 
@@ -306,7 +313,7 @@ git rm <file-name>
 ```
 #### Renaming a file
 ```bash
-git rm <old-name> <new-name>
+git mv <old-name> <new-name>
 ```
 # Remove Everything
 `Note: This will remove entire git folder`
